@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Car Rental</title>
+</head>
+<body>
+  <div class="header">
+    <img src="img/Logo.svg" alt="Logo" class="logo">
+
+    <div class="tabcontent">
+        <ul>
+        <li><a href="#" id="home">Home</a></li>
+        <li><a href="#" id="vehicles">Vehicles</a></li>
+        <li><a href="#" id="details">Details</a></li>
+        <li><a href="#" id="about">About Us</a></li>
+        <li><a href="#" id="contact">Contact Us</a></li>
+        </ul>
+    </div>
+    
+    <div class="help">
+    <img src="img/phone.svg" alt="Phone" class="call">
+    <div class="help-info">
+      <p class="help-text">Need help?</p>
+      <p id="phone-number">+420 123 456 789</p>
+    </div>
+    </div>
+
+  </div>
+
+  <div class="hero">
+    <div class="hero-text">
+
+    <h1>Experience the road like never before</h1>
+    <p id="hero-description">Choose from our extensive selection of vehicles designed to fit every occasion. From fuel-efficient cars for city driving to powerful SUVs for long journeys, we ensure safety, comfort, and convenience at every step of your rental experience.</p>
+    <button class="view-cars-button">View all cars</button>
+
+    </div>
+
+    <div class="form">
+
+    <h2>Book your car</h2>
+
+    <div class="select-container">
+
+    <select class="select">
+      <option value="" disabled selected>Car type</option>
+      <option value="car1">Small car</option>
+      <option value="car2">Large car</option>
+      <option value="car3">Premium car</option>
+    </select>
+
+    <select class="select">
+        <option value="" disabled selected>Pickup location</option>
+        <option value="location1">Airport</option>
+        <option value="location2">Train Station</option>
+        <option value="location3">City Center</option>
+    </select>
+
+    <select class="select">
+        <option value="" disabled selected>Drop-off location</option>
+        <option value="location1">Airport</option>
+        <option value="location2">Train Station</option>
+        <option value="location3">City Center</option>
+    </select>
+
+    </div> <!-- /.select-container -->
+
+    <div class="date-picker-container">
+         <input type="text" class="date-picker" placeholder="Rental date">
+        <img src="img/calendar.svg" alt="Calendar" class="calendar-icon">
+
+        <div class="date-display" hidden>
+
+            <div class="date-display-header">
+            <button class="prev">Prev</button>
+            <div>
+            <select class="month-select">
+                <option value="0" selected>January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+            </select>
+            <select class="year-select">
+                <option value="0" selected>2024</option>
+                <option value="1">2025</option>
+                <option value="2">2026</option>
+                <option value="3">2027</option>
+                <option value="4">2028</option>
+            </select>
+            </div>
+            <button class="next">Next</button>
+            </div>
+
+            <div class="weekdays">
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thu</span>
+            <span>Fri</span>
+            <span>Sat</span>
+            <span>Sun</span>
+            </div> <!-- /.weekdays -->
+
+            <div class="dates">
+            <button disabled>1</button>
+            <button disabled>2</button>
+            <button disabled>3</button>
+            <button disabled>4</button>
+            <button disabled>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button class="today">9</button>
+            <button>10</button>
+            <button>11</button>
+            <button>12</button>
+            <button>13</button>
+            <button>14</button>
+            <button>15</button>
+            <button>16</button>
+            <button>17</button>
+            <button>18</button>
+            <button class="selected">19</button>
+            <button>20</button>
+            <button>21</button>
+            <button>22</button>
+            <button>23</button>
+            <button>24</button>
+            <button>25</button>
+            <button>26</button>
+            <button>27</button>
+            <button>28</button>
+            <button>29</button>
+            <button>30</button>
+            </div> <!-- /.dates -->
+            <div class="date-display-footer">
+                <button class="cancel">Cancel</button>
+                <button class="apply">Apply</button>
+            </div>
+        </div> <!-- /.date-display -->
+    </div> <!-- /.date-picker-container -->
+
+    <div class="date-picker-container">
+        <input type="text" class="date-picker" placeholder="Return date">
+        <img src="img/calendar.svg" alt="Calendar" class="calendar-icon">
+
+        <div class="date-display" hidden >
+
+            <div class="date-display-header">
+            <button class="prev">Prev</button>
+            <div>
+            <select class="month-select">
+                <option value="0" selected>January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+            </select>
+            <select class="year-select">
+                <option value="0" selected>2025</option>
+                <option value="1">2026</option>
+                <option value="2">2027</option>
+                <option value="3">2028</option>
+                <option value="4">2029</option>
+                <option value="5">2030</option>
+            </select>
+            </div>
+            <button class="next">Next</button>
+            </div>
+
+            <div class="weekdays">
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thu</span>
+            <span>Fri</span>
+            <span>Sat</span>
+            <span>Sun</span>
+            </div> <!-- /.weekdays -->
+
+            <div class="dates">
+            <button disabled>1</button>
+            <button disabled>2</button>
+            <button disabled>3</button>
+            <button disabled>4</button>
+            <button disabled>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button class="today">9</button>
+            <button>10</button>
+            <button>11</button>
+            <button>12</button>
+            <button>13</button>
+            <button>14</button>
+            <button>15</button>
+            <button>16</button>
+            <button>17</button>
+            <button>18</button>
+            <button class="selected">19</button>
+            <button>20</button>
+            <button>21</button>
+            <button>22</button>
+            <button>23</button>
+            <button>24</button>
+            <button>25</button>
+            <button>26</button>
+            <button>27</button>
+            <button>28</button>
+            <button>29</button>
+            <button>30</button>
+            </div> <!-- /.dates -->
+            <div class="date-display-footer">
+                <button class="cancel">Cancel</button>
+                <button class="apply">Apply</button>
+            </div>
+        </div> <!-- /.date-display -->
+    </div> <!-- /.date-picker-container -->
+
+    <button class="book-button">Book now</button>
+
+    </div>
+
+    <div class="background">
+        <img src="img/Group.png" alt="Group" class="group-image">
+        <img src="img/car.png" alt="Car" class="car-image">
+    </div>
+
+  </div>
+
+  <div class="info-block">
+    <div class="feature">
+      <img src="img/location-icon.svg" alt="Location Icon">
+      <p class="name-desc">Availability</p>
+      <p class="n-description">A wide range of cars ready for you anytime, ensuring flexibility and convenience.</p>
+    </div>
+    <div class="feature">
+      <img src="img/car-icon.svg" alt="Car Icon">
+      <p class="name-desc">Comfort</p>
+      <p class="n-description">Our vehicles are equipped with the latest technology and comfort features to enhance your driving experience.</p>
+    </div>
+    <div class="feature">
+      <img src="img/wallet-icon.svg" alt="Wallet Icon">
+      <p class="name-desc">Savings</p>
+      <p class="n-description">We offer competitive pricing and special deals to help you save on your rental.</p>
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
